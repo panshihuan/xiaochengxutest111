@@ -53,7 +53,7 @@ Page({
   },
   handleNavigate: function() {
     wx.navigateTo({
-      url: 'logs?id=2',
+      url: 'logs?id=33',
       success: function(res) {
         console.log(44444, res)
         res.eventChannel.emit('acceptDataFromOpenedPage', {data: '123'})
