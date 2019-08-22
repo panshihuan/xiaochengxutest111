@@ -1,0 +1,12 @@
+.list-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+  justify-content: center;
+  align-items: start;
+  word-break:break-all;
+}
+.log-item {
+  margin: 10rpx;
+  text-align: left;
+}

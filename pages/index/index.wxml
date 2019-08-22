@@ -9,7 +9,9 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-    <button bindtap="handleNavigate">go</button>
+    <button bindtap="handleNavigate">navigateTo</button>
+    <button bindtap="handleRedirectTo">redirectTo</button>
+    <button bindtap="handleNavigateToList">list</button>
     <map></map>
   </view>
 </view>

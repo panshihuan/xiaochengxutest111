@@ -53,14 +53,23 @@ Page({
   },
   handleNavigate: function() {
     wx.navigateTo({
-      url: 'logs?id=33',
+      url: '../logs/logs?id=2222',
       success: function(res) {
-        console.log(44444, res)
         res.eventChannel.emit('acceptDataFromOpenedPage', {data: '123'})
-      },
-      complete: function() {
-        console.log(7777777)
       }
+    })
+  },
+  handleRedirectTo: function () {
+    wx.redirectTo({
+      url: '../logs/logs',
+      success: function (res) {
+        console.log(3333444, res)
+      }
+    })
+  },
+  handleNavigateToList: function() {
+    wx.navigateTo({
+      url: '../list/list',
     })
   }
 })
